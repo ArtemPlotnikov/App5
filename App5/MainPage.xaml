@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="App5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Storyboard x:Name="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1.214"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="1.342"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="3.75"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="6"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1.322"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="1.397"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="1.129"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="5.625"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.937"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="2.25"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+        </Storyboard>
+
+    </Page.Resources>
+
+    <Grid>
+    <Button Height="250" Width="250" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
+        <Button Height="200" Width="200" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Button_Click_1" Content="Тест" FontSize="50"/>
+    </Grid>
+</Page>
